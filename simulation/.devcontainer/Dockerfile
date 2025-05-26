@@ -1,31 +1,22 @@
-# Use official ROS 2 Jazzy base image
-FROM ros:jazzy-ros-base
+# Start from the official ROS 2 Jazzy base image (Ubuntu 24.04).
+FROM ros:jazzy
 
-# Install basic tools and Gazebo dependencies
+# Set environment variables to avoid locale warnings and ensure non-interactive apt.
+ARG DEBIAN_FRONTEND=noninteractive
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+
+# This Dockerfile defines the base image and basic dependencies.
+# The `remoteUser` and `features` in devcontainer.json will handle user creation,
+# switching to that user, and installing more common tools like `sudo`, `git`, etc.
+
+# Install any core apt packages required BEFORE the user is created.
+# This should be minimal, usually just things like 'git' if needed for image build itself.
 RUN apt-get update && apt-get install -y \
-    curl gnupg lsb-release \
-    python3-colcon-common-extensions \
-    build-essential \
-    git wget nano net-tools \
-    python3-rosdep \
-    gazebo11 \
-    ros-jazzy-turtlebot3-gazebo \
-    ros-jazzy-gazebo-ros-pkgs \
-    ros-jazzy-gazebo-ros2-control \
-    ros-jazzy-rviz2 \
-    ros-jazzy-xacro \
-    ros-jazzy-robot-state-publisher && \
-    rm -rf /var/lib/apt/lists/*
+    sudo \
+    && rm -rf /var/lib/apt/lists/*
 
-# Setup rosdep
-RUN rosdep init || true && rosdep update
-
-# Setup ROS environment for user
-SHELL ["/bin/bash", "-c"]
-RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc
-
-# Set working directory
-WORKDIR /workspace
-
-# Default command
-CMD ["bash"]
+# The Dev Container will then set the 'remoteUser' (e.g., 'ros')
+# and execute the remaining commands as that user.
+# Therefore, we *don't* put 'USER ros' or explicit useradd here.
+# Let `devcontainer.json` take full control of the user.
