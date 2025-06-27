@@ -1,0 +1,10 @@
+/ros2_ws/build/my_test_package/CMakeFiles/uninstall.dir
+/ros2_ws/build/my_test_package/CMakeFiles/my_test_package_uninstall.dir
+/ros2_ws/build/my_test_package/CMakeFiles/my_node.dir
+/ros2_ws/build/my_test_package/CMakeFiles/test.dir
+/ros2_ws/build/my_test_package/CMakeFiles/edit_cache.dir
+/ros2_ws/build/my_test_package/CMakeFiles/rebuild_cache.dir
+/ros2_ws/build/my_test_package/CMakeFiles/list_install_components.dir
+/ros2_ws/build/my_test_package/CMakeFiles/install.dir
+/ros2_ws/build/my_test_package/CMakeFiles/install/local.dir
+/ros2_ws/build/my_test_package/CMakeFiles/install/strip.dir

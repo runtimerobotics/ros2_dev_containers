@@ -1,0 +1,46 @@
+[0.021s] Invoking command in '/ros2_ws/build/my_test_package': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /ros2_ws/src/my_test_package -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/my_test_package
+[0.061s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.452s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.515s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.602s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.632s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.672s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.736s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.956s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.962s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.093s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.306s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.542s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.543s] -- Configured cppcheck include dirs: 
+[1.543s] -- Configured cppcheck exclude dirs and/or files: 
+[1.545s] -- Added test 'lint_cmake' to check CMake code style
+[1.548s] -- Added test 'uncrustify' to check C / C++ code style
+[1.548s] -- Configured uncrustify additional arguments: 
+[1.549s] -- Added test 'xmllint' to check XML markup files
+[1.554s] -- Configuring done (1.5s)
+[1.586s] -- Generating done (0.0s)
+[1.591s] -- Build files have been written to: /ros2_ws/build/my_test_package
+[1.599s] Invoked command in '/ros2_ws/build/my_test_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /ros2_ws/src/my_test_package -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/my_test_package
+[1.601s] Invoking command in '/ros2_ws/build/my_test_package': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/build/my_test_package -- -j8 -l8
+[1.760s] [100%] Built target my_node
+[1.778s] Invoked command in '/ros2_ws/build/my_test_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/build/my_test_package -- -j8 -l8
+[1.792s] Invoking command in '/ros2_ws/build/my_test_package': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/build/my_test_package
+[1.802s] -- Install configuration: ""
+[1.803s] -- Execute custom install script
+[1.803s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/lib/my_test_package/my_node
+[1.803s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/package_run_dependencies/my_test_package
+[1.804s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/parent_prefix_path/my_test_package
+[1.804s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.sh
+[1.804s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.dsv
+[1.805s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.sh
+[1.805s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.dsv
+[1.806s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.bash
+[1.806s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.sh
+[1.806s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.zsh
+[1.806s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.dsv
+[1.807s] -- Symlinking: /ros2_ws/install/my_test_package/share/my_test_package/package.dsv
+[1.819s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/packages/my_test_package
+[1.819s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig.cmake
+[1.820s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig-version.cmake
+[1.820s] -- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/package.xml
+[1.824s] Invoked command in '/ros2_ws/build/my_test_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/build/my_test_package

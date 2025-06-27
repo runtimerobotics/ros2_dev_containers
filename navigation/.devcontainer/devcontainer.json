@@ -1,0 +1,16 @@
+{
+  "name": "ROS2 Jazzy Dev Container",
+  "image": "ros:jazzy",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python"
+  ],
+  "mounts": [
+    "source=/home/venkatesh/ros2_dev_containers/ros2_dev_containers/navigation/ros2_ws,target=/ros2_ws,type=bind"
+  ],
+  "postCreateCommand": "bash -c 'source /opt/ros/jazzy/setup.bash && cd /ros2_ws && colcon build --symlink-install'",
+  "remoteUser": "root"
+}

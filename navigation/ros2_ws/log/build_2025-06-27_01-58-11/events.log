@@ -1,0 +1,40 @@
+[0.000000] (-) TimerEvent: {}
+[0.001159] (my_test_package) JobQueued: {'identifier': 'my_test_package', 'dependencies': OrderedDict()}
+[0.012738] (my_test_package) JobStarted: {'identifier': 'my_test_package'}
+[0.087036] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'cmake'}
+[0.091774] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'build'}
+[0.092082] (my_test_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/my_test_package', '--', '-j8', '-l8'], 'cwd': '/ros2_ws/build/my_test_package', 'env': OrderedDict({'HOSTNAME': 'cdaee4362fdc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/ros2_dev_containers/navigation', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-41863132-a6e6-4a64-926f-0fb1c122dae8.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ros2_ws/build/my_test_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099505] (-) TimerEvent: {}
+[0.201485] (-) TimerEvent: {}
+[0.302448] (-) TimerEvent: {}
+[0.403314] (-) TimerEvent: {}
+[0.504121] (-) TimerEvent: {}
+[0.604829] (-) TimerEvent: {}
+[0.618912] (my_test_package) StdoutLine: {'line': b'[100%] Built target my_node\n'}
+[0.656053] (my_test_package) CommandEnded: {'returncode': 0}
+[0.660841] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'install'}
+[0.705258] (-) TimerEvent: {}
+[0.712801] (my_test_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/my_test_package'], 'cwd': '/ros2_ws/build/my_test_package', 'env': OrderedDict({'HOSTNAME': 'cdaee4362fdc', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/ros2_dev_containers/navigation', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-41863132-a6e6-4a64-926f-0fb1c122dae8.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ros2_ws/build/my_test_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.751855] (my_test_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.753496] (my_test_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.766795] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/lib/my_test_package/my_node\n'}
+[0.767382] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/package_run_dependencies/my_test_package\n'}
+[0.769696] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/parent_prefix_path/my_test_package\n'}
+[0.773695] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.sh\n'}
+[0.776129] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.dsv\n'}
+[0.777078] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.sh\n'}
+[0.779000] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.dsv\n'}
+[0.780147] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.bash\n'}
+[0.792209] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.sh\n'}
+[0.794028] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.zsh\n'}
+[0.796282] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.dsv\n'}
+[0.796710] (my_test_package) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/my_test_package/share/my_test_package/package.dsv\n'}
+[0.809604] (-) TimerEvent: {}
+[0.849078] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/packages/my_test_package\n'}
+[0.852705] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig.cmake\n'}
+[0.855810] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig-version.cmake\n'}
+[0.861698] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/package.xml\n'}
+[0.862080] (my_test_package) CommandEnded: {'returncode': 0}
+[0.915106] (-) TimerEvent: {}
+[0.976487] (my_test_package) JobEnded: {'identifier': 'my_test_package', 'rc': 0}
+[0.982259] (-) EventReactorShutdown: {}

@@ -1,0 +1,173 @@
+[0.000000] (-) TimerEvent: {}
+[0.001612] (my_test_package) JobQueued: {'identifier': 'my_test_package', 'dependencies': OrderedDict()}
+[0.002214] (my_test_package) JobStarted: {'identifier': 'my_test_package'}
+[0.022921] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'cmake'}
+[0.025281] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'build'}
+[0.026690] (my_test_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/my_test_package', '--', '-j8', '-l8'], 'cwd': '/ros2_ws/build/my_test_package', 'env': OrderedDict({'HOSTNAME': '2dd7740dbc83', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/ros2_dev_containers/navigation', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-b0bf0fa5-a59c-4d2b-803b-3aeadcdbf4b4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ros2_ws/build/my_test_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.088092] (my_test_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.098839] (-) TimerEvent: {}
+[0.199415] (-) TimerEvent: {}
+[0.300078] (-) TimerEvent: {}
+[0.400677] (-) TimerEvent: {}
+[0.462908] (my_test_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.477627] (my_test_package) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.500887] (-) TimerEvent: {}
+[0.520014] (my_test_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.544304] (my_test_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.569862] (my_test_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.595700] (my_test_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601030] (-) TimerEvent: {}
+[0.701651] (-) TimerEvent: {}
+[0.726571] (my_test_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.729408] (my_test_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801826] (-) TimerEvent: {}
+[0.831739] (my_test_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.902028] (-) TimerEvent: {}
+[0.957125] (my_test_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.002261] (-) TimerEvent: {}
+[1.102825] (-) TimerEvent: {}
+[1.203432] (-) TimerEvent: {}
+[1.243300] (my_test_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.244393] (my_test_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.244914] (my_test_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.247034] (my_test_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.249198] (my_test_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.249618] (my_test_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.250981] (my_test_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.254176] (my_test_package) StdoutLine: {'line': b'-- Configuring done (1.2s)\n'}
+[1.293498] (my_test_package) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.303604] (-) TimerEvent: {}
+[1.310287] (my_test_package) StdoutLine: {'line': b'-- Build files have been written to: /ros2_ws/build/my_test_package\n'}
+[1.403777] (-) TimerEvent: {}
+[1.451966] (my_test_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o\x1b[0m\n'}
+[1.504027] (-) TimerEvent: {}
+[1.604742] (-) TimerEvent: {}
+[1.705471] (-) TimerEvent: {}
+[1.806087] (-) TimerEvent: {}
+[1.906892] (-) TimerEvent: {}
+[2.007757] (-) TimerEvent: {}
+[2.108608] (-) TimerEvent: {}
+[2.209393] (-) TimerEvent: {}
+[2.310181] (-) TimerEvent: {}
+[2.411050] (-) TimerEvent: {}
+[2.512713] (-) TimerEvent: {}
+[2.613414] (-) TimerEvent: {}
+[2.714074] (-) TimerEvent: {}
+[2.814856] (-) TimerEvent: {}
+[2.915474] (-) TimerEvent: {}
+[3.016350] (-) TimerEvent: {}
+[3.121869] (-) TimerEvent: {}
+[3.222600] (-) TimerEvent: {}
+[3.325062] (-) TimerEvent: {}
+[3.426037] (-) TimerEvent: {}
+[3.527523] (-) TimerEvent: {}
+[3.628201] (-) TimerEvent: {}
+[3.728834] (-) TimerEvent: {}
+[3.829565] (-) TimerEvent: {}
+[3.930245] (-) TimerEvent: {}
+[4.030862] (-) TimerEvent: {}
+[4.131402] (-) TimerEvent: {}
+[4.232059] (-) TimerEvent: {}
+[4.332910] (-) TimerEvent: {}
+[4.437474] (-) TimerEvent: {}
+[4.538143] (-) TimerEvent: {}
+[4.638970] (-) TimerEvent: {}
+[4.742067] (-) TimerEvent: {}
+[4.843091] (-) TimerEvent: {}
+[4.943944] (-) TimerEvent: {}
+[5.044538] (-) TimerEvent: {}
+[5.145155] (-) TimerEvent: {}
+[5.245748] (-) TimerEvent: {}
+[5.346481] (-) TimerEvent: {}
+[5.447300] (-) TimerEvent: {}
+[5.547974] (-) TimerEvent: {}
+[5.648637] (-) TimerEvent: {}
+[5.749312] (-) TimerEvent: {}
+[5.849934] (-) TimerEvent: {}
+[5.950526] (-) TimerEvent: {}
+[6.051226] (-) TimerEvent: {}
+[6.151849] (-) TimerEvent: {}
+[6.252632] (-) TimerEvent: {}
+[6.362884] (-) TimerEvent: {}
+[6.463824] (-) TimerEvent: {}
+[6.564569] (-) TimerEvent: {}
+[6.665232] (-) TimerEvent: {}
+[6.765787] (-) TimerEvent: {}
+[6.866582] (-) TimerEvent: {}
+[6.967238] (-) TimerEvent: {}
+[7.067774] (-) TimerEvent: {}
+[7.168321] (-) TimerEvent: {}
+[7.268852] (-) TimerEvent: {}
+[7.369453] (-) TimerEvent: {}
+[7.470052] (-) TimerEvent: {}
+[7.570823] (-) TimerEvent: {}
+[7.671561] (-) TimerEvent: {}
+[7.772351] (-) TimerEvent: {}
+[7.873077] (-) TimerEvent: {}
+[7.973759] (-) TimerEvent: {}
+[8.074276] (-) TimerEvent: {}
+[8.174857] (-) TimerEvent: {}
+[8.275380] (-) TimerEvent: {}
+[8.375929] (-) TimerEvent: {}
+[8.476477] (-) TimerEvent: {}
+[8.577050] (-) TimerEvent: {}
+[8.677826] (-) TimerEvent: {}
+[8.778705] (-) TimerEvent: {}
+[8.879394] (-) TimerEvent: {}
+[8.980120] (-) TimerEvent: {}
+[9.081056] (-) TimerEvent: {}
+[9.182237] (-) TimerEvent: {}
+[9.283229] (-) TimerEvent: {}
+[9.384077] (-) TimerEvent: {}
+[9.484596] (-) TimerEvent: {}
+[9.585208] (-) TimerEvent: {}
+[9.685929] (-) TimerEvent: {}
+[9.786521] (-) TimerEvent: {}
+[9.887080] (-) TimerEvent: {}
+[9.987722] (-) TimerEvent: {}
+[10.088403] (-) TimerEvent: {}
+[10.189157] (-) TimerEvent: {}
+[10.289715] (-) TimerEvent: {}
+[10.390287] (-) TimerEvent: {}
+[10.490783] (-) TimerEvent: {}
+[10.592830] (-) TimerEvent: {}
+[10.695090] (-) TimerEvent: {}
+[10.795601] (-) TimerEvent: {}
+[10.896123] (-) TimerEvent: {}
+[10.996668] (-) TimerEvent: {}
+[11.097150] (-) TimerEvent: {}
+[11.197697] (-) TimerEvent: {}
+[11.298218] (-) TimerEvent: {}
+[11.398744] (-) TimerEvent: {}
+[11.499386] (-) TimerEvent: {}
+[11.560528] (my_test_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable my_node\x1b[0m\n'}
+[11.599686] (-) TimerEvent: {}
+[11.700352] (-) TimerEvent: {}
+[11.800943] (-) TimerEvent: {}
+[11.893595] (my_test_package) StdoutLine: {'line': b'[100%] Built target my_node\n'}
+[11.901182] (-) TimerEvent: {}
+[11.912661] (my_test_package) CommandEnded: {'returncode': 0}
+[11.913654] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'install'}
+[11.925497] (my_test_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/my_test_package'], 'cwd': '/ros2_ws/build/my_test_package', 'env': OrderedDict({'HOSTNAME': '2dd7740dbc83', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/ros2_dev_containers/navigation', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-b0bf0fa5-a59c-4d2b-803b-3aeadcdbf4b4.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/ros2_ws/build/my_test_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[11.938606] (my_test_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.939687] (my_test_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.940614] (my_test_package) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/my_test_package/lib/my_test_package/my_node\n'}
+[11.951930] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/package_run_dependencies/my_test_package\n'}
+[11.952548] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/parent_prefix_path/my_test_package\n'}
+[11.952778] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.sh\n'}
+[11.953396] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.dsv\n'}
+[11.953669] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.sh\n'}
+[11.954408] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/environment/path.dsv\n'}
+[11.955423] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.bash\n'}
+[11.955940] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.sh\n'}
+[11.956342] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.zsh\n'}
+[11.956846] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/local_setup.dsv\n'}
+[11.957023] (my_test_package) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/my_test_package/share/my_test_package/package.dsv\n'}
+[11.967655] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/ament_index/resource_index/packages/my_test_package\n'}
+[11.968270] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig.cmake\n'}
+[11.968660] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig-version.cmake\n'}
+[11.969116] (my_test_package) StdoutLine: {'line': b'-- Up-to-date symlink: /ros2_ws/install/my_test_package/share/my_test_package/package.xml\n'}
+[11.973194] (my_test_package) CommandEnded: {'returncode': 0}
+[12.001557] (-) TimerEvent: {}
+[12.013289] (my_test_package) JobEnded: {'identifier': 'my_test_package', 'rc': 0}
+[12.015529] (-) EventReactorShutdown: {}

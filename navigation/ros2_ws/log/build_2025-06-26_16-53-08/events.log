@@ -1,0 +1,59 @@
+[0.000000] (-) TimerEvent: {}
+[0.000525] (my_test_package) JobQueued: {'identifier': 'my_test_package', 'dependencies': OrderedDict()}
+[0.000617] (my_test_package) JobStarted: {'identifier': 'my_test_package'}
+[0.015084] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'cmake'}
+[0.016090] (my_test_package) JobProgress: {'identifier': 'my_test_package', 'progress': 'build'}
+[0.017505] (my_test_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/my_test_package', '--', '-j8', '-l8'], 'cwd': '/ros2_ws/build/my_test_package', 'env': OrderedDict({'HOSTNAME': '46b74aa117ea', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/18e3a1ec544e6907be1e944a94c496e302073435/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/18e3a1ec544e6907be1e944a94c496e302073435/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/workspaces/ros2_dev_containers/navigation', 'TERM_PROGRAM_VERSION': '1.101.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b762ba8d-c8df-42a6-bef6-b78cf2b92531.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/18e3a1ec544e6907be1e944a94c496e302073435/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/18e3a1ec544e6907be1e944a94c496e302073435/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-bb0cc8f0-fb7b-44ba-b114-970d0e4225f0.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/vscode/vscode-server/bin/linux-x64/18e3a1ec544e6907be1e944a94c496e302073435/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-083925bde0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/ros2_ws/install/my_test_package:/opt/ros/jazzy', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/ros2_ws/build/my_test_package', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ros2_ws/install/my_test_package:/opt/ros/jazzy'}), 'shell': False}
+[0.056021] (my_test_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099076] (-) TimerEvent: {}
+[0.199572] (-) TimerEvent: {}
+[0.300072] (-) TimerEvent: {}
+[0.333036] (my_test_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.353605] (my_test_package) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.400301] (-) TimerEvent: {}
+[0.487506] (my_test_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.500670] (-) TimerEvent: {}
+[0.547412] (my_test_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.600974] (-) TimerEvent: {}
+[0.630750] (my_test_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.697986] (my_test_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701253] (-) TimerEvent: {}
+[0.801919] (-) TimerEvent: {}
+[0.902868] (-) TimerEvent: {}
+[1.003629] (-) TimerEvent: {}
+[1.030572] (my_test_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.045111] (my_test_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.103837] (-) TimerEvent: {}
+[1.204474] (-) TimerEvent: {}
+[1.269114] (my_test_package) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.301855] (my_test_package) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.304657] (-) TimerEvent: {}
+[1.350279] (my_test_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.404861] (-) TimerEvent: {}
+[1.505543] (-) TimerEvent: {}
+[1.606371] (-) TimerEvent: {}
+[1.609344] (my_test_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.706564] (-) TimerEvent: {}
+[1.776468] (my_test_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.777936] (my_test_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.779485] (my_test_package) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.786531] (my_test_package) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (add_executable):\n'}
+[1.786858] (my_test_package) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.786977] (my_test_package) StderrLine: {'line': b'\n'}
+[1.787196] (my_test_package) StderrLine: {'line': b'    src/my_node.cpp\n'}
+[1.787321] (my_test_package) StderrLine: {'line': b'\n'}
+[1.787427] (my_test_package) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm\n'}
+[1.787532] (my_test_package) StderrLine: {'line': b'  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90\n'}
+[1.787636] (my_test_package) StderrLine: {'line': b'  .f95 .f03 .hip .ispc\n'}
+[1.787737] (my_test_package) StderrLine: {'line': b'\n'}
+[1.787839] (my_test_package) StderrLine: {'line': b'\x1b[0m\n'}
+[1.790141] (my_test_package) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (add_executable):\n'}
+[1.790415] (my_test_package) StderrLine: {'line': b'  No SOURCES given to target: my_node\n'}
+[1.790529] (my_test_package) StderrLine: {'line': b'\n'}
+[1.790676] (my_test_package) StderrLine: {'line': b'\x1b[0m\n'}
+[1.790800] (my_test_package) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[1.796879] (my_test_package) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[1.799771] (my_test_package) CommandEnded: {'returncode': 2}
+[1.806874] (-) TimerEvent: {}
+[1.822949] (my_test_package) JobEnded: {'identifier': 'my_test_package', 'rc': 2}
+[1.834387] (-) EventReactorShutdown: {}

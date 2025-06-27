@@ -1,0 +1,16 @@
+/ros2_ws/install/my_test_package/lib/my_test_package/my_node
+/ros2_ws/install/my_test_package/share/ament_index/resource_index/package_run_dependencies/my_test_package
+/ros2_ws/install/my_test_package/share/ament_index/resource_index/parent_prefix_path/my_test_package
+/ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.sh
+/ros2_ws/install/my_test_package/share/my_test_package/environment/ament_prefix_path.dsv
+/ros2_ws/install/my_test_package/share/my_test_package/environment/path.sh
+/ros2_ws/install/my_test_package/share/my_test_package/environment/path.dsv
+/ros2_ws/install/my_test_package/share/my_test_package/local_setup.bash
+/ros2_ws/install/my_test_package/share/my_test_package/local_setup.sh
+/ros2_ws/install/my_test_package/share/my_test_package/local_setup.zsh
+/ros2_ws/install/my_test_package/share/my_test_package/local_setup.dsv
+/ros2_ws/install/my_test_package/share/my_test_package/package.dsv
+/ros2_ws/install/my_test_package/share/ament_index/resource_index/packages/my_test_package
+/ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig.cmake
+/ros2_ws/install/my_test_package/share/my_test_package/cmake/my_test_packageConfig-version.cmake
+/ros2_ws/install/my_test_package/share/my_test_package/package.xml
