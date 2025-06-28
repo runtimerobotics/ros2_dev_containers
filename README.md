@@ -58,6 +58,8 @@ To use these Devcontainers, you’ll need:
    rqt
    rviz2
    gz sim
+   ros2 pkg list | grep moveit
+
    ```
 6. **Note for GUI Tools (rqt, rviz2, gz sim)**
    If GUI tools are not displaying properly, allow local network connections for X11 with:
@@ -73,9 +75,9 @@ To use these Devcontainers, you’ll need:
 1. **A sample simulation package is already placed in the src folder.**
   To test it:
   Clean up previous builds using
-   
-
-   
+    ```bash
+   rm -rf build/ install/ log/
+   ```
 2. **Build and Run**
  Navigate to your workspace root:
    ```bash
