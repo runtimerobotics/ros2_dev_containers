@@ -69,4 +69,37 @@ To use these Devcontainers, you’ll need:
    ```bash
    xhost -local:
    ```
+## 🧩 Test the Sample Simulation
+1. **A sample simulation package is already placed in the src folder.**
+  To test it:
+  Clean up previous builds using
+   
+
+   
+2. **Build and Run**
+ Navigate to your workspace root:
+   ```bash
+      cd ros2_dev_containers/simulation/ros2_ws
+      colcon build
+      source install/setup.bash
+      ros2 launch andino_gz andino_gz.launch.py
+   ```
+3. **Troubleshooting**
+If you get errors about missing or broken packages, install the required packages inside the container, then rebuild and try again.
+
+## 🧩 Create and Test Your Own Packages
+
+You can create your own ROS 2 packages inside the src/ folder:
+  ```bash
+      cd ros2_dev_containers/simulation/ros2_ws/src
+      ros2 pkg create --build-type ament_python my_new_package
+   ```
+After adding or modifying packages, rebuild and source your workspace:
+    ```bash
+        cd ..
+        colcon build
+        source install/setup.bash
+   ```
+
+Then test your simulation launch files or nodes as needed.
 
