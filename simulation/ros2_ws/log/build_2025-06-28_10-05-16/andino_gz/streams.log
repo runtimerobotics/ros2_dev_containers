@@ -1,0 +1,122 @@
+[0.009s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz
+[0.072s] -- The C compiler identification is GNU 13.3.0
+[0.161s] -- The CXX compiler identification is GNU 13.3.0
+[0.192s] -- Detecting C compiler ABI info
+[0.336s] -- Detecting C compiler ABI info - done
+[0.345s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.345s] -- Detecting C compile features
+[0.346s] -- Detecting C compile features - done
+[0.355s] -- Detecting CXX compiler ABI info
+[0.464s] -- Detecting CXX compiler ABI info - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.483s] -- Detecting CXX compile features
+[0.484s] -- Detecting CXX compile features - done
+[0.533s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.772s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.274s] -- Configuring done (1.3s)
+[1.277s] -- Generating done (0.0s)
+[1.279s] -- Build files have been written to: /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz
+[1.284s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz
+[1.285s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz -- -j8 -l8
+[1.347s] Built target ament_cmake_python_copy_andino_gz
+[1.581s] running egg_info
+[1.582s] creating andino_gz.egg-info
+[1.612s] writing andino_gz.egg-info/PKG-INFO
+[1.613s] writing dependency_links to andino_gz.egg-info/dependency_links.txt
+[1.613s] writing top-level names to andino_gz.egg-info/top_level.txt
+[1.613s] writing manifest file 'andino_gz.egg-info/SOURCES.txt'
+[1.682s] reading manifest file 'andino_gz.egg-info/SOURCES.txt'
+[1.683s] writing manifest file 'andino_gz.egg-info/SOURCES.txt'
+[1.715s] Built target ament_cmake_python_build_andino_gz_egg
+[1.728s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz -- -j8 -l8
+[1.729s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz
+[1.738s] -- Install configuration: ""
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/pythonpath.sh
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/pythonpath.dsv
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/dependency_links.txt
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/PKG-INFO
+[1.739s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/SOURCES.txt
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/top_level.txt
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/__init__.py
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/__init__.py
+[1.740s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/substitutions.py
+[1.784s] Listing '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz'...
+[1.784s] Compiling '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/__init__.py'...
+[1.784s] Listing '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools'...
+[1.785s] Compiling '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/__init__.py'...
+[1.785s] Compiling '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/substitutions.py'...
+[1.792s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config
+[1.792s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config/nav2_params.yaml
+[1.792s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config/bridge_config.yaml
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config_gui
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config_gui/default.config
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles
+[1.793s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_NormalDX.jpg
+[1.794s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_Color.jpg
+[1.795s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_Roughness.jpg
+[1.795s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls
+[1.795s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_nor_gl_4k.exr
+[1.825s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_diff_4k.jpg
+[1.834s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_rough_4k.exr
+[1.841s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood
+[1.841s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_diff_4k.jpg
+[1.850s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_nor_gl_4k.exr
+[1.859s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_rough_4k.exr
+[1.868s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/model.config
+[1.868s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes
+[1.868s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/tiles.dae
+[1.872s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/wood.dae
+[1.872s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/walls.dae
+[1.872s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/model.sdf
+[1.873s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch
+[1.873s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/andino_gz.launch.py
+[1.873s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include
+[1.873s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include/gz_ros_bridge.launch.py
+[1.873s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include/spawn_robot.launch.py
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/slam_toolbox_online_async.launch.py
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/view_frames.launch.py
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office/office.pgm
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office/office.yaml
+[1.874s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot/depot.pgm
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot/depot.yaml
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz/andino_gz.rviz
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz/andino_gz_nav2.rviz
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/andino_gz.urdf.xacro
+[1.875s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/include
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/include/andino_materials.xacro
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/LICENSE_depot
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/populated_office.sdf
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/empty.sdf
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/depot.sdf
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/office.sdf
+[1.876s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/andino_gz.dsv
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/andino_gz.sh
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/package_run_dependencies/andino_gz
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/parent_prefix_path/andino_gz
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/ament_prefix_path.sh
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/ament_prefix_path.dsv
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/path.sh
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/path.dsv
+[1.877s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.bash
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.sh
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.zsh
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.dsv
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.dsv
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/packages/andino_gz
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/cmake/andino_gzConfig.cmake
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/cmake/andino_gzConfig-version.cmake
+[1.878s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.xml
+[1.880s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz

@@ -1,0 +1,78 @@
+[0.030s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base
+[0.108s] -- The C compiler identification is GNU 13.3.0
+[0.190s] -- The CXX compiler identification is GNU 13.3.0
+[0.210s] -- Detecting C compiler ABI info
+[0.324s] -- Detecting C compiler ABI info - done
+[0.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.341s] -- Detecting C compile features
+[0.341s] -- Detecting C compile features - done
+[0.353s] -- Detecting CXX compiler ABI info
+[0.478s] -- Detecting CXX compiler ABI info - done
+[0.498s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.498s] -- Detecting CXX compile features
+[0.498s] -- Detecting CXX compile features - done
+[0.507s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.792s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.026s] -- Found hardware_interface: 4.29.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[1.149s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.190s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.234s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.270s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.574s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.646s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.652s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.694s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.789s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.794s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.826s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.834s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.852s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.877s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.319s] -- Found Threads: TRUE  
+[2.324s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[2.324s] -- Checking for module 'libserial'
+[2.342s] --   Found libserial, version 1.0.0
+[2.402s] -- Found ament_cmake_clang_format: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_clang_format/cmake)
+[2.546s] -- Configuring done (2.5s)
+[2.587s] -- Generating done (0.0s)
+[2.598s] -- Build files have been written to: /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base
+[2.622s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base
+[2.624s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base -- -j8 -l8
+[2.729s] [ 14%] [32mBuilding CXX object src/CMakeFiles/motor_driver.dir/motor_driver.cpp.o[0m
+[3.134s] [ 28%] [32m[1mLinking CXX shared library libmotor_driver.so[0m
+[3.204s] [ 28%] Built target motor_driver
+[3.229s] [ 71%] [32mBuilding CXX object src/CMakeFiles/diffdrive_andino.dir/wheel.cpp.o[0m
+[3.229s] [ 71%] [32mBuilding CXX object src/CMakeFiles/diffdrive_andino.dir/diffdrive_andino.cpp.o[0m
+[3.229s] [ 71%] [32mBuilding CXX object applications/CMakeFiles/motor_driver_demo.dir/motor_driver_demo.cpp.o[0m
+[3.722s] [ 85%] [32m[1mLinking CXX executable motor_driver_demo[0m
+[3.800s] [ 85%] Built target motor_driver_demo
+[8.614s] [100%] [32m[1mLinking CXX shared library libdiffdrive_andino.so[0m
+[8.881s] [100%] Built target diffdrive_andino
+[8.893s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base -- -j8 -l8
+[8.894s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base
+[8.902s] -- Install configuration: ""
+[8.902s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/andino_hw.xml
+[8.902s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/ament_index/resource_index/package_run_dependencies/andino_base
+[8.902s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/ament_index/resource_index/parent_prefix_path/andino_base
+[8.902s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/ament_prefix_path.sh
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/ament_prefix_path.dsv
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/path.sh
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/path.dsv
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/local_setup.bash
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/local_setup.sh
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/local_setup.zsh
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/local_setup.dsv
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.dsv
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/ament_index/resource_index/packages/andino_base
+[8.903s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/andino_base
+[8.904s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/cmake/andino_baseConfig.cmake
+[8.904s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/cmake/andino_baseConfig-version.cmake
+[8.904s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.xml
+[8.904s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin/motor_driver_demo
+[8.904s] -- Set non-toolchain portion of runtime path of "/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin/motor_driver_demo" to ""
+[8.904s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/libdiffdrive_andino.so
+[8.906s] -- Set non-toolchain portion of runtime path of "/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/libdiffdrive_andino.so" to ""
+[8.906s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/libmotor_driver.so
+[8.906s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/library_path.sh
+[8.906s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/environment/library_path.dsv
+[8.907s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base

@@ -1,0 +1,769 @@
+[0.129s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.129s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7274496b3380>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7274496b2d50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7274496b2d50>>, mixin_verb=('build',))
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.172s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.173s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.173s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.173s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/ros2_dev_containers/simulation/ros2_ws'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_base) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_base' with type 'ros.ament_cmake' and name 'andino_base'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_bringup) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_bringup' with type 'ros.ament_cmake' and name 'andino_bringup'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_control) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_control' with type 'ros.ament_cmake' and name 'andino_control'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_description) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_description' with type 'ros.ament_cmake' and name 'andino_description'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_firmware) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_firmware' with type 'ros.ament_cmake' and name 'andino_firmware'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_hardware) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_hardware' with type 'ros.ament_cmake' and name 'andino_hardware'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_navigation) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_navigation' with type 'ros.ament_cmake' and name 'andino_navigation'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/andino_slam) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino/andino_slam' with type 'ros.ament_cmake' and name 'andino_slam'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docker) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino/docs) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/andino_gz) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/andino_gz/andino_gz' with type 'ros.ament_cmake' and name 'andino_gz'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docker) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'ros'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['cmake', 'python']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'cmake'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'python'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extensions ['python_setup_py']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/andino_gz/docs/media) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_target' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.239s] DEBUG:colcon.colcon_core.verb:Building package 'andino_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base', 'symlink_install': False, 'test_result_base': None}
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_target' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.240s] DEBUG:colcon.colcon_core.verb:Building package 'andino_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_description', 'symlink_install': False, 'test_result_base': None}
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_target' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_clean_first' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'cmake_force_configure' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'ament_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_firmware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.240s] DEBUG:colcon.colcon_core.verb:Building package 'andino_firmware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_firmware', 'symlink_install': False, 'test_result_base': None}
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_target' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.240s] Level 5:colcon.colcon_core.verb:set package 'andino_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.240s] DEBUG:colcon.colcon_core.verb:Building package 'andino_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_target' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'andino_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_target' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'andino_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_slam', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'andino_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_control', 'symlink_install': False, 'test_result_base': None}
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'andino_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz', 'symlink_install': False, 'test_result_base': None}
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_target' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.242s] Level 5:colcon.colcon_core.verb:set package 'andino_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.242s] DEBUG:colcon.colcon_core.verb:Building package 'andino_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup', 'merge_install': False, 'path': '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.242s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.243s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.244s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_description' with build type 'ament_cmake'
+[0.244s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_description'
+[0.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base'
+[0.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_slam' with build type 'ament_cmake'
+[0.260s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_slam'
+[0.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.263s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_firmware' with build type 'ament_cmake'
+[0.263s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_firmware'
+[0.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.267s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_hardware' with build type 'ament_cmake'
+[0.268s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_hardware'
+[0.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.273s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_navigation' with build type 'ament_cmake'
+[0.273s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_navigation'
+[0.273s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.273s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description -- -j8 -l8
+[0.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base -- -j8 -l8
+[0.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam -- -j8 -l8
+[0.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware -- -j8 -l8
+[0.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware -- -j8 -l8
+[0.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation -- -j8 -l8
+[0.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam -- -j8 -l8
+[0.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam
+[0.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description -- -j8 -l8
+[0.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware -- -j8 -l8
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware -- -j8 -l8
+[0.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware
+[0.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_slam)
+[0.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_slam
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam' for CMake module files
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam' for CMake config files
+[0.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_slam', 'cmake_prefix_path')
+[0.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.ps1'
+[0.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.dsv'
+[0.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.sh'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/bin'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/lib/pkgconfig/andino_slam.pc'
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/lib/python3.12/site-packages'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/bin'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.dsv'
+[0.436s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.sh'
+[0.437s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.bash'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.zsh'
+[0.439s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/colcon-core/packages/andino_slam)
+[0.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_slam)
+[0.439s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam' for CMake module files
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam' for CMake config files
+[0.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_slam', 'cmake_prefix_path')
+[0.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.ps1'
+[0.440s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.dsv'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/hook/cmake_prefix_path.sh'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/bin'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/lib/pkgconfig/andino_slam.pc'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/lib/python3.12/site-packages'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/bin'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.ps1'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.dsv'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.sh'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.bash'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/andino_slam/package.zsh'
+[0.444s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam/share/colcon-core/packages/andino_slam)
+[0.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_description)
+[0.446s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description' for CMake module files
+[0.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_description
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description' for CMake config files
+[0.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_description', 'cmake_prefix_path')
+[0.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.ps1'
+[0.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.dsv'
+[0.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.sh'
+[0.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/bin'
+[0.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/lib/pkgconfig/andino_description.pc'
+[0.449s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/lib/python3.12/site-packages'
+[0.450s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/bin'
+[0.450s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.ps1'
+[0.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.dsv'
+[0.451s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.sh'
+[0.452s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.bash'
+[0.452s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.zsh'
+[0.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/colcon-core/packages/andino_description)
+[0.453s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_description)
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description' for CMake module files
+[0.454s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description' for CMake config files
+[0.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_description', 'cmake_prefix_path')
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.ps1'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.dsv'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/hook/cmake_prefix_path.sh'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/bin'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/lib/pkgconfig/andino_description.pc'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/lib/python3.12/site-packages'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/bin'
+[0.456s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.dsv'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.sh'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.bash'
+[0.459s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/andino_description/package.zsh'
+[0.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description/share/colcon-core/packages/andino_description)
+[0.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_hardware)
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware' for CMake module files
+[0.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware' for CMake config files
+[0.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_hardware', 'cmake_prefix_path')
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.ps1'
+[0.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.dsv'
+[0.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.sh'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/bin'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/lib/pkgconfig/andino_hardware.pc'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/lib/python3.12/site-packages'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/bin'
+[0.465s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.ps1'
+[0.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.dsv'
+[0.465s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.sh'
+[0.466s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.bash'
+[0.466s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.zsh'
+[0.466s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/colcon-core/packages/andino_hardware)
+[0.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_hardware)
+[0.467s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware' for CMake module files
+[0.467s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware' for CMake config files
+[0.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_hardware', 'cmake_prefix_path')
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.ps1'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.dsv'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/hook/cmake_prefix_path.sh'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/bin'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/lib/pkgconfig/andino_hardware.pc'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/lib/python3.12/site-packages'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/bin'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.ps1'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.dsv'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.sh'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.bash'
+[0.473s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.zsh'
+[0.473s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/colcon-core/packages/andino_hardware)
+[0.473s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_firmware)
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware' for CMake module files
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_firmware
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware' for CMake config files
+[0.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_firmware', 'cmake_prefix_path')
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.dsv'
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.sh'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/bin'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/lib/pkgconfig/andino_firmware.pc'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/lib/python3.12/site-packages'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/bin'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.ps1'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.dsv'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.sh'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.bash'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.zsh'
+[0.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/colcon-core/packages/andino_firmware)
+[0.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_firmware)
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware' for CMake module files
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware' for CMake config files
+[0.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_firmware', 'cmake_prefix_path')
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/hook/cmake_prefix_path.sh'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/bin'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/lib/pkgconfig/andino_firmware.pc'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/lib/python3.12/site-packages'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/bin'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.ps1'
+[0.484s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.dsv'
+[0.484s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.sh'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.bash'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/andino_firmware/package.zsh'
+[0.486s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_firmware/share/colcon-core/packages/andino_firmware)
+[0.487s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz' with build type 'ament_cmake'
+[0.487s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz'
+[0.487s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.487s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation -- -j8 -l8
+[0.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base -- -j8 -l8
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base
+[0.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz -- -j8 -l8
+[0.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_navigation)
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation' for CMake module files
+[0.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_navigation
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation' for CMake config files
+[0.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_navigation', 'cmake_prefix_path')
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.ps1'
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.dsv'
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.sh'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/bin'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/lib/pkgconfig/andino_navigation.pc'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/lib/python3.12/site-packages'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/bin'
+[0.518s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.ps1'
+[0.518s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.dsv'
+[0.519s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.sh'
+[0.519s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.bash'
+[0.520s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.zsh'
+[0.520s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/colcon-core/packages/andino_navigation)
+[0.521s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_navigation)
+[0.521s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation' for CMake module files
+[0.522s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation' for CMake config files
+[0.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_navigation', 'cmake_prefix_path')
+[0.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.ps1'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.dsv'
+[0.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/hook/cmake_prefix_path.sh'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/bin'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/lib/pkgconfig/andino_navigation.pc'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/lib/python3.12/site-packages'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/bin'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.ps1'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.dsv'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.sh'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.bash'
+[0.528s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.zsh'
+[0.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/colcon-core/packages/andino_navigation)
+[0.529s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_base)
+[0.529s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base' for CMake module files
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_base
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base' for CMake config files
+[0.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'cmake_prefix_path')
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.ps1'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.dsv'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.sh'
+[0.532s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib'
+[0.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'ld_library_path_lib')
+[0.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.ps1'
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.dsv'
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.sh'
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin'
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'path')
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.ps1'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.dsv'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.sh'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/pkgconfig/andino_base.pc'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/python3.12/site-packages'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin'
+[0.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'pythonscriptspath')
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.ps1'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.sh'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.sh'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.bash'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.zsh'
+[0.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/colcon-core/packages/andino_base)
+[0.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_base)
+[0.541s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base' for CMake module files
+[0.541s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base' for CMake config files
+[0.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'cmake_prefix_path')
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.ps1'
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.dsv'
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/cmake_prefix_path.sh'
+[0.543s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib'
+[0.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'ld_library_path_lib')
+[0.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.ps1'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.dsv'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/ld_library_path_lib.sh'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin'
+[0.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'path')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.ps1'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.dsv'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/path.sh'
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/pkgconfig/andino_base.pc'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib/python3.12/site-packages'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin'
+[0.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_base', 'pythonscriptspath')
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.dsv'
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/hook/pythonscriptspath.sh'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.dsv'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.sh'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.bash'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/andino_base/package.zsh'
+[0.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/share/colcon-core/packages/andino_base)
+[0.551s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_control' with build type 'ament_cmake'
+[0.551s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_control'
+[0.551s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control -- -j8 -l8
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control -- -j8 -l8
+[0.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control
+[0.628s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_control)
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control' for CMake module files
+[0.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_control
+[0.631s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control' for CMake config files
+[0.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_control', 'cmake_prefix_path')
+[0.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.ps1'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.dsv'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.sh'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/bin'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/lib/pkgconfig/andino_control.pc'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/lib/python3.12/site-packages'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/bin'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.ps1'
+[0.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.dsv'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.sh'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.bash'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.zsh'
+[0.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/colcon-core/packages/andino_control)
+[0.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_control)
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control' for CMake module files
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control' for CMake config files
+[0.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_control', 'cmake_prefix_path')
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.ps1'
+[0.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.dsv'
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/hook/cmake_prefix_path.sh'
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/bin'
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/lib/pkgconfig/andino_control.pc'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/lib/python3.12/site-packages'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/bin'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.ps1'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.dsv'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.sh'
+[0.652s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.bash'
+[0.653s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/andino_control/package.zsh'
+[0.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control/share/colcon-core/packages/andino_control)
+[0.654s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_bringup' with build type 'ament_cmake'
+[0.654s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_bringup'
+[0.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.655s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup -- -j8 -l8
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup -- -j8 -l8
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup
+[0.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_bringup)
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup' for CMake module files
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_control:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/lib:${LD_LIBRARY_PATH} PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_base/bin:${PATH} /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_bringup
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup' for CMake config files
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_bringup', 'cmake_prefix_path')
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.ps1'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.dsv'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.sh'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/bin'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/lib/pkgconfig/andino_bringup.pc'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/lib/python3.12/site-packages'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/bin'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.ps1'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.dsv'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.sh'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.bash'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.zsh'
+[0.745s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/colcon-core/packages/andino_bringup)
+[0.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_bringup)
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup' for CMake module files
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup' for CMake config files
+[0.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_bringup', 'cmake_prefix_path')
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.ps1'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/hook/cmake_prefix_path.sh'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/bin'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/lib/pkgconfig/andino_bringup.pc'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/lib/python3.12/site-packages'
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/bin'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.dsv'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.sh'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.bash'
+[0.750s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/andino_bringup/package.zsh'
+[0.750s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_bringup/share/colcon-core/packages/andino_bringup)
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz -- -j8 -l8
+[0.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz
+[1.045s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_gz)
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz' for CMake module files
+[1.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz' returned '0': AMENT_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_slam:/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz' for CMake config files
+[1.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_gz', 'cmake_prefix_path')
+[1.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.ps1'
+[1.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.dsv'
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.sh'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/bin'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/pkgconfig/andino_gz.pc'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages'
+[1.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_gz', 'pythonpath')
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.ps1'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.dsv'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.sh'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/bin'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.ps1'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.dsv'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.sh'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.bash'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.zsh'
+[1.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/colcon-core/packages/andino_gz)
+[1.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(andino_gz)
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz' for CMake module files
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz' for CMake config files
+[1.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_gz', 'cmake_prefix_path')
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.dsv'
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/cmake_prefix_path.sh'
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib'
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/bin'
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/pkgconfig/andino_gz.pc'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages'
+[1.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('andino_gz', 'pythonpath')
+[1.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.ps1'
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.dsv'
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/hook/pythonpath.sh'
+[1.060s] Level 1:colcon.colcon_core.environment:checking '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/bin'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.ps1'
+[1.061s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.sh'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.bash'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.zsh'
+[1.062s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/colcon-core/packages/andino_gz)
+[1.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.063s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.070s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.070s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.070s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.070s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.073s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.073s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.074s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/local_setup.ps1'
+[1.075s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/_local_setup_util_ps1.py'
+[1.077s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/setup.ps1'
+[1.078s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/local_setup.sh'
+[1.078s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/_local_setup_util_sh.py'
+[1.079s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/setup.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/local_setup.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/setup.bash'
+[1.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/local_setup.zsh'
+[1.081s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/setup.zsh'

@@ -1,0 +1,8 @@
+In file included from [01m[K/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base/src/motor_driver.cpp:30[m[K:
+[01m[K/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_base/include/andino_base/motor_driver.h:35:10:[m[K [01;31m[Kfatal error: [m[Klibserial/SerialPort.h: No such file or directory
+   35 | #include [01;31m[K<libserial/SerialPort.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [src/CMakeFiles/motor_driver.dir/build.make:76: src/CMakeFiles/motor_driver.dir/motor_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:198: src/CMakeFiles/motor_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

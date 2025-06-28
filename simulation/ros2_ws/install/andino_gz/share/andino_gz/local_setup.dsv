@@ -1,0 +1,5 @@
+source;share/andino_gz/environment/ament_prefix_path.sh
+source;share/andino_gz/environment/andino_gz.sh
+source;share/andino_gz/environment/path.sh
+source;share/andino_gz/environment/pythonpath.sh
+source;share/andino_gz/environment/andino_gz.dsv

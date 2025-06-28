@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c93406e59be4b9a52998.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "andino_gz",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_andino_gz_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_andino_gz_egg-8dda8eb9b1c084cb650d.json",
+					"name" : "ament_cmake_python_build_andino_gz_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_andino_gz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_andino_gz-74c71b1193f117cf97a4.json",
+					"name" : "ament_cmake_python_copy_andino_gz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "andino_gz_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-andino_gz_uninstall-416ad4bf5d40a60dabac.json",
+					"name" : "andino_gz_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b31d321d61205f8378cb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_gz",
+		"source" : "/workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino_gz/andino_gz"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,47 @@
+[0.026s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_hardware -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware
+[0.095s] -- The C compiler identification is GNU 13.3.0
+[0.174s] -- The CXX compiler identification is GNU 13.3.0
+[0.197s] -- Detecting C compiler ABI info
+[0.320s] -- Detecting C compiler ABI info - done
+[0.332s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.333s] -- Detecting C compile features
+[0.333s] -- Detecting C compile features - done
+[0.346s] -- Detecting CXX compiler ABI info
+[0.512s] -- Detecting CXX compiler ABI info - done
+[0.540s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.540s] -- Detecting CXX compile features
+[0.543s] -- Detecting CXX compile features - done
+[0.553s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.796s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.063s] -- Configuring done (1.0s)
+[1.066s] -- Generating done (0.0s)
+[1.069s] -- Build files have been written to: /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware
+[1.074s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/ros2_dev_containers/simulation/ros2_ws/src/andino/andino_hardware -DCMAKE_INSTALL_PREFIX=/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware
+[1.076s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware -- -j8 -l8
+[1.132s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware -- -j8 -l8
+[1.143s] Invoking command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware
+[1.155s] -- Install configuration: ""
+[1.155s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model
+[1.155s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/raspi_cam_mount
+[1.155s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/raspi_cam_mount/raspi_camera_mount_back.stl
+[1.155s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/raspi_cam_mount/raspi_camera_mount_front.stl
+[1.156s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/raspi_cam_mount/raspi_camera_mount_hinge.stl
+[1.156s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/chassis
+[1.156s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/chassis/RobotChassis.PDF
+[1.156s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware//printing_model/chassis/RobotChassis.STL
+[1.157s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/ament_index/resource_index/package_run_dependencies/andino_hardware
+[1.157s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/ament_index/resource_index/parent_prefix_path/andino_hardware
+[1.157s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/environment/ament_prefix_path.sh
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/environment/ament_prefix_path.dsv
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/environment/path.sh
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/environment/path.dsv
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/local_setup.bash
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/local_setup.sh
+[1.158s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/local_setup.zsh
+[1.159s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/local_setup.dsv
+[1.160s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.dsv
+[1.160s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/ament_index/resource_index/packages/andino_hardware
+[1.160s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/cmake/andino_hardwareConfig.cmake
+[1.160s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/cmake/andino_hardwareConfig-version.cmake
+[1.162s] -- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_hardware/share/andino_hardware/package.xml
+[1.168s] Invoked command in '/workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/ros2_dev_containers/simulation/ros2_ws/build/andino_hardware

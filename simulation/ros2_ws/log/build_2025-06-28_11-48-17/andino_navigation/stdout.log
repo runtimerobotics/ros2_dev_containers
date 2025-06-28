@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//launch
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//launch/bringup.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//params
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//params/nav2_params.yaml
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//rviz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation//rviz/nav2_default_view.rviz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/ament_index/resource_index/package_run_dependencies/andino_navigation
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/ament_index/resource_index/parent_prefix_path/andino_navigation
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/environment/ament_prefix_path.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/environment/path.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/environment/path.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/local_setup.bash
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/local_setup.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/local_setup.zsh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/local_setup.dsv
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/ament_index/resource_index/packages/andino_navigation
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/cmake/andino_navigationConfig.cmake
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/cmake/andino_navigationConfig-version.cmake
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_navigation/share/andino_navigation/package.xml

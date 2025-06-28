@@ -1,0 +1,94 @@
+Built target ament_cmake_python_copy_andino_gz
+running egg_info
+writing andino_gz.egg-info/PKG-INFO
+writing dependency_links to andino_gz.egg-info/dependency_links.txt
+writing top-level names to andino_gz.egg-info/top_level.txt
+reading manifest file 'andino_gz.egg-info/SOURCES.txt'
+writing manifest file 'andino_gz.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_andino_gz_egg
+-- Install configuration: ""
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/pythonpath.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/pythonpath.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/dependency_links.txt
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/PKG-INFO
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/SOURCES.txt
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz-0.1.1-py3.12.egg-info/top_level.txt
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/__init__.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/__init__.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools/substitutions.py
+Listing '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz'...
+Listing '/workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/lib/python3.12/site-packages/andino_gz/launch_tools'...
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config/nav2_params.yaml
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config/bridge_config.yaml
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config_gui
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//config_gui/default.config
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_NormalDX.jpg
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_Color.jpg
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/tiles/Tiles054_1K-JPG_Roughness.jpg
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_nor_gl_4k.exr
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_diff_4k.jpg
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/walls/macro_flour_rough_4k.exr
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_diff_4k.jpg
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_nor_gl_4k.exr
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/materials/textures/wood/wood_floor_rough_4k.exr
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/model.config
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/tiles.dae
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/wood.dae
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/meshes/walls.dae
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//models/office/model.sdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/andino_gz.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include/gz_ros_bridge.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/include/spawn_robot.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/slam_toolbox_online_async.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//launch/view_frames.launch.py
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office/office.pgm
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/office/office.yaml
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot/depot.pgm
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//maps/depot/depot.yaml
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz/andino_gz.rviz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//rviz/andino_gz_nav2.rviz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/andino_gz.urdf.xacro
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/include
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//urdf/include/andino_materials.xacro
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/LICENSE_depot
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/populated_office.sdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/empty.sdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/depot.sdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz//worlds/office.sdf
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/andino_gz.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/andino_gz.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/package_run_dependencies/andino_gz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/parent_prefix_path/andino_gz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/ament_prefix_path.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/ament_prefix_path.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/path.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/environment/path.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.bash
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.sh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.zsh
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/local_setup.dsv
+-- Installing: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.dsv
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/ament_index/resource_index/packages/andino_gz
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/cmake/andino_gzConfig.cmake
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/cmake/andino_gzConfig-version.cmake
+-- Up-to-date: /workspaces/ros2_dev_containers/simulation/ros2_ws/install/andino_gz/share/andino_gz/package.xml
