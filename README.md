@@ -38,9 +38,9 @@ To use these Devcontainers, you’ll need:
    ```
 2. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
-  ```bash
-  Dev Containers: Reopen in Container
-  ```
+      ```bash
+      Dev Containers: Reopen in Container
+      ```
 3. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
