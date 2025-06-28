@@ -10,10 +10,10 @@
 
 ## Project Structure
 ```bash
-ROS2_DEV/
-└── ros2_dev_containers/
+ros2_dev_containers/
 ├── manipulation/
 ├── navigation/
 ├── simulation/
 └── README.md
 ```
+
