@@ -93,13 +93,9 @@ You can create your own ROS 2 packages inside the src/ folder:
   ```bash
       cd ros2_dev_containers/simulation/ros2_ws/src
       ros2 pkg create --build-type ament_python my_new_package
+      cd ..
+      colcon build
+      source install/setup.bash
    ```
-After adding or modifying packages, rebuild and source your workspace:
-    ```bash
-        cd ..
-        colcon build
-        source install/setup.bash
-   ```
-
 Then test your simulation launch files or nodes as needed.
 
