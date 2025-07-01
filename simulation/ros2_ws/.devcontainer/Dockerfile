@@ -1,4 +1,3 @@
-
 # # Base Image
 # FROM osrf/ros:jazzy-desktop-full
 
@@ -8,7 +7,7 @@
 # # Update package lists
 # RUN apt update
 
-# # Install common tools, Gazebo, and MoveIt
+# # Install common tools, Gazebo, MoveIt, Navigation2, clang-format, and libserial
 # RUN apt install -y \
 #     python3-pip \
 #     mesa-utils \
@@ -21,7 +20,10 @@
 #     ros-jazzy-ros-gz \
 #     ros-jazzy-moveit \
 #     ros-jazzy-moveit-plugins \
-#     ros-jazzy-moveit-resources-panda-moveit-config
+#     ros-jazzy-moveit-resources-panda-moveit-config \
+#     ros-jazzy-nav2-bringup \
+#     libserial-dev \
+#     ros-jazzy-ament-cmake-clang-format
 
 # # Setup locale
 # RUN apt install -y locales && \
@@ -35,12 +37,11 @@
 # # Explicit ROS env
 # ENV ROS_DISTRO=jazzy
 
-# # Confirm Python version: should be 3.10.x
+# # Confirm Python version
 # RUN python3 --version
 
 # # Default shell
 # CMD ["/bin/bash"]
-
 
 # Base Image
 FROM osrf/ros:jazzy-desktop-full
@@ -48,10 +49,13 @@ FROM osrf/ros:jazzy-desktop-full
 # Always set noninteractive for safe installs
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update package lists
-RUN apt update
+# Update package lists and add ROS 2 sources to ensure all packages are found
+RUN apt update && apt install -y curl gnupg2 lsb-release && \
+    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - && \
+    echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list && \
+    apt update
 
-# Install common tools, Gazebo, MoveIt, Navigation2, clang-format, and libserial
+# Install common tools, Gazebo, MoveIt, Navigation2, clang-format, libserial, PCL, OpenCV
 RUN apt install -y \
     python3-pip \
     mesa-utils \
@@ -67,7 +71,11 @@ RUN apt install -y \
     ros-jazzy-moveit-resources-panda-moveit-config \
     ros-jazzy-nav2-bringup \
     libserial-dev \
-    ros-jazzy-ament-cmake-clang-format
+    ros-jazzy-ament-cmake-clang-format && \
+    # Try to install PCL ROS bindings; fallback to system libpcl if not found
+    (apt install -y ros-jazzy-pcl-ros || apt install -y libpcl-dev) && \
+    # Try to install vision_opencv; fallback to system OpenCV if not found
+    (apt install -y ros-jazzy-vision-opencv || apt install -y libopencv-dev)
 
 # Setup locale
 RUN apt install -y locales && \
@@ -86,3 +94,8 @@ RUN python3 --version
 
 # Default shell
 CMD ["/bin/bash"]
+
+
+
+
+
