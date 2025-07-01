@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "ros2_dev_containers",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
