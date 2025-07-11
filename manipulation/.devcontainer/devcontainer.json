@@ -1,0 +1,20 @@
+{
+  "name": "ros2-jazzy-moveit2-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "--env", "DISPLAY=${env:DISPLAY}",
+    "--volume", "/tmp/.X11-unix:/tmp/.X11-unix"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-azuretools.vscode-docker",
+    "ms-python.python"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "sudo apt update && rosdep update && rosdep install --from-paths src --ignore-src -r -y"
+}

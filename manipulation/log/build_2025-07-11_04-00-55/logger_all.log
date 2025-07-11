@@ -1,0 +1,525 @@
+[0.953s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.956s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a24c3689e20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a24c37e6630>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a24c37e6630>>, mixin_verb=('build',))
+[1.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.236s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.237s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[1.241s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.242s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.242s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/manipulation_ws'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.436s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.436s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['ignore', 'ignore_ament_install']
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ignore'
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ignore_ament_install'
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['colcon_pkg']
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'colcon_pkg'
+[1.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['colcon_meta']
+[1.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'colcon_meta'
+[1.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['ros']
+[1.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'ros'
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['cmake', 'python']
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'cmake'
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'python'
+[1.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extensions ['python_setup_py']
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources) by extension 'python_setup_py'
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extension 'ignore'
+[1.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extension 'ignore_ament_install'
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extensions ['colcon_pkg']
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extension 'colcon_pkg'
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extensions ['colcon_meta']
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extension 'colcon_meta'
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extensions ['ros']
+[1.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/dual_arm_panda_moveit_config) by extension 'ros'
+[1.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/dual_arm_panda_moveit_config' with type 'ros.ament_cmake' and name 'dual_arm_panda_moveit_config'
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extensions ['ignore', 'ignore_ament_install']
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extension 'ignore'
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extension 'ignore_ament_install'
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extensions ['colcon_pkg']
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extension 'colcon_pkg'
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extensions ['colcon_meta']
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extension 'colcon_meta'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extensions ['ros']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_description) by extension 'ros'
+[1.469s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/fanuc_description' with type 'ros.ament_cmake' and name 'moveit_resources_fanuc_description'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extension 'ignore'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extension 'ignore_ament_install'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extensions ['colcon_pkg']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extension 'colcon_pkg'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extensions ['colcon_meta']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extension 'colcon_meta'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extensions ['ros']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/fanuc_moveit_config) by extension 'ros'
+[1.478s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/fanuc_moveit_config' with type 'ros.ament_cmake' and name 'moveit_resources_fanuc_moveit_config'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extensions ['ignore', 'ignore_ament_install']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extension 'ignore'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extension 'ignore_ament_install'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extensions ['colcon_pkg']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extension 'colcon_pkg'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extensions ['colcon_meta']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extension 'colcon_meta'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extensions ['ros']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/moveit_resources) by extension 'ros'
+[1.486s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/moveit_resources' with type 'ros.ament_cmake' and name 'moveit_resources'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extensions ['ignore', 'ignore_ament_install']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extension 'ignore'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extension 'ignore_ament_install'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extensions ['colcon_pkg']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extension 'colcon_pkg'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extensions ['colcon_meta']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extension 'colcon_meta'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extensions ['ros']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_description) by extension 'ros'
+[1.492s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/panda_description' with type 'ros.ament_cmake' and name 'moveit_resources_panda_description'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extension 'ignore'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extension 'ignore_ament_install'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extensions ['colcon_pkg']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extension 'colcon_pkg'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extensions ['colcon_meta']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extension 'colcon_meta'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extensions ['ros']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/panda_moveit_config) by extension 'ros'
+[1.498s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/panda_moveit_config' with type 'ros.ament_cmake' and name 'moveit_resources_panda_moveit_config'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extensions ['ignore', 'ignore_ament_install']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extension 'ignore'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extension 'ignore_ament_install'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extensions ['colcon_pkg']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extension 'colcon_pkg'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extensions ['colcon_meta']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extension 'colcon_meta'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extensions ['ros']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_resources/pr2_description) by extension 'ros'
+[1.506s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_resources/pr2_description' with type 'ros.ament_cmake' and name 'moveit_resources_pr2_description'
+[1.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_target' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.602s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources_fanuc_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources_fanuc_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/fanuc_description', 'symlink_install': False, 'test_result_base': None}
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_args' from command line to 'None'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_target' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.604s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources_panda_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources_panda_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources_panda_description', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/panda_description', 'symlink_install': False, 'test_result_base': None}
+[1.605s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_args' from command line to 'None'
+[1.605s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_target' from command line to 'None'
+[1.605s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.605s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.607s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.607s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_pr2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.608s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources_pr2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources_pr2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources_pr2_description', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/pr2_description', 'symlink_install': False, 'test_result_base': None}
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'dual_arm_panda_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.609s] DEBUG:colcon.colcon_core.verb:Building package 'dual_arm_panda_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/dual_arm_panda_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/dual_arm_panda_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.615s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_fanuc_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.615s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources_fanuc_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/fanuc_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.617s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.617s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.617s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.618s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources_panda_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.618s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources_panda_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/panda_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_target' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_clean_cache' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_clean_first' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'cmake_force_configure' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'ament_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'catkin_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'moveit_resources' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.622s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_resources' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/manipulation_ws/build/moveit_resources', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/manipulation_ws/install/moveit_resources', 'merge_install': False, 'path': '/workspaces/manipulation_ws/src/moveit_resources/moveit_resources', 'symlink_install': False, 'test_result_base': None}
+[1.623s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.632s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.634s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/panda_description' with build type 'ament_cmake'
+[1.635s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/panda_description'
+[1.672s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.675s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.675s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.733s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/fanuc_description' with build type 'ament_cmake'
+[1.733s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/fanuc_description'
+[1.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.757s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/pr2_description' with build type 'ament_cmake'
+[1.757s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/pr2_description'
+[1.760s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.762s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_panda_description -- -j4 -l4
+[1.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_fanuc_description -- -j4 -l4
+[1.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_pr2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_pr2_description -- -j4 -l4
+[2.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_pr2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_pr2_description -- -j4 -l4
+[2.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_pr2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_pr2_description
+[2.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_fanuc_description -- -j4 -l4
+[2.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_fanuc_description
+[2.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_fanuc_description)
+[2.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_panda_description -- -j4 -l4
+[2.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_panda_description
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description' for CMake module files
+[2.601s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description' for CMake config files
+[2.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_fanuc_description', 'cmake_prefix_path')
+[2.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.ps1'
+[2.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.dsv'
+[2.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.sh'
+[2.646s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/bin'
+[2.650s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/lib/pkgconfig/moveit_resources_fanuc_description.pc'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/lib/python3.12/site-packages'
+[2.666s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/bin'
+[2.666s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.ps1'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.dsv'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.sh'
+[2.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_fanuc_description
+[2.676s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.bash'
+[2.679s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.zsh'
+[2.684s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/colcon-core/packages/moveit_resources_fanuc_description)
+[2.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_fanuc_description)
+[2.686s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description' for CMake module files
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description' for CMake config files
+[2.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_fanuc_description', 'cmake_prefix_path')
+[2.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.ps1'
+[2.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.dsv'
+[2.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/hook/cmake_prefix_path.sh'
+[2.702s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/bin'
+[2.703s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/lib/pkgconfig/moveit_resources_fanuc_description.pc'
+[2.703s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/lib/python3.12/site-packages'
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/bin'
+[2.710s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.ps1'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.dsv'
+[2.732s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.sh'
+[2.735s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.bash'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.zsh'
+[2.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_fanuc_description/share/colcon-core/packages/moveit_resources_fanuc_description)
+[2.741s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/fanuc_moveit_config' with build type 'ament_cmake'
+[2.741s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/fanuc_moveit_config'
+[2.741s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.741s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_panda_description)
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description' for CMake module files
+[2.779s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description' for CMake config files
+[2.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_panda_description', 'cmake_prefix_path')
+[2.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.ps1'
+[2.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.dsv'
+[2.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.sh'
+[2.791s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/bin'
+[2.791s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/lib/pkgconfig/moveit_resources_panda_description.pc'
+[2.792s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/lib/python3.12/site-packages'
+[2.792s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/bin'
+[2.798s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.ps1'
+[2.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.dsv'
+[2.810s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.sh'
+[2.822s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.bash'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.zsh'
+[2.831s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/colcon-core/packages/moveit_resources_panda_description)
+[2.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_panda_description)
+[2.832s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description' for CMake module files
+[2.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_panda_description
+[2.836s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description' for CMake config files
+[2.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_panda_description', 'cmake_prefix_path')
+[2.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.ps1'
+[2.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.dsv'
+[2.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/hook/cmake_prefix_path.sh'
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/bin'
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/lib/pkgconfig/moveit_resources_panda_description.pc'
+[2.858s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/lib/python3.12/site-packages'
+[2.858s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_description/bin'
+[2.859s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.ps1'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.dsv'
+[2.878s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.sh'
+[2.881s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.bash'
+[2.885s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.zsh'
+[2.890s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_panda_description/share/colcon-core/packages/moveit_resources_panda_description)
+[2.891s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_pr2_description)
+[2.894s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description' for CMake module files
+[2.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_pr2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_pr2_description
+[2.907s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description' for CMake config files
+[2.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_pr2_description', 'cmake_prefix_path')
+[2.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.ps1'
+[2.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.dsv'
+[2.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.sh'
+[2.923s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/bin'
+[2.923s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/lib/pkgconfig/moveit_resources_pr2_description.pc'
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/lib/python3.12/site-packages'
+[2.927s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/bin'
+[2.928s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.ps1'
+[2.940s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.dsv'
+[2.952s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.sh'
+[2.953s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.bash'
+[2.954s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.zsh'
+[2.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/colcon-core/packages/moveit_resources_pr2_description)
+[2.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_pr2_description)
+[2.957s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description' for CMake module files
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description' for CMake config files
+[2.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_pr2_description', 'cmake_prefix_path')
+[2.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.ps1'
+[2.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.dsv'
+[2.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/hook/cmake_prefix_path.sh'
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/bin'
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/lib/pkgconfig/moveit_resources_pr2_description.pc'
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/lib/python3.12/site-packages'
+[2.964s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/bin'
+[2.964s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.ps1'
+[2.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.dsv'
+[2.967s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.sh'
+[2.971s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.bash'
+[2.972s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/moveit_resources_pr2_description/package.zsh'
+[2.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_pr2_description/share/colcon-core/packages/moveit_resources_pr2_description)
+[2.987s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/panda_moveit_config' with build type 'ament_cmake'
+[2.987s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/panda_moveit_config'
+[2.988s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.988s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.053s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/dual_arm_panda_moveit_config' with build type 'ament_cmake'
+[3.054s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/dual_arm_panda_moveit_config'
+[3.056s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.056s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config -- -j4 -l4
+[3.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config -- -j4 -l4
+[3.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/dual_arm_panda_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/dual_arm_panda_moveit_config -- -j4 -l4
+[3.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config -- -j4 -l4
+[3.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config
+[3.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config -- -j4 -l4
+[3.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config
+[3.575s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_panda_moveit_config)
+[3.576s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config' for CMake module files
+[3.577s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config' for CMake config files
+[3.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_panda_moveit_config', 'cmake_prefix_path')
+[3.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_panda_moveit_config
+[3.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.ps1'
+[3.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.dsv'
+[3.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.sh'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/bin'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/lib/pkgconfig/moveit_resources_panda_moveit_config.pc'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/lib/python3.12/site-packages'
+[3.584s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/bin'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.ps1'
+[3.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.dsv'
+[3.586s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.sh'
+[3.587s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.bash'
+[3.588s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.zsh'
+[3.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/colcon-core/packages/moveit_resources_panda_moveit_config)
+[3.590s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_panda_moveit_config)
+[3.591s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config' for CMake module files
+[3.592s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config' for CMake config files
+[3.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_panda_moveit_config', 'cmake_prefix_path')
+[3.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.ps1'
+[3.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.dsv'
+[3.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/hook/cmake_prefix_path.sh'
+[3.596s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/bin'
+[3.596s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/lib/pkgconfig/moveit_resources_panda_moveit_config.pc'
+[3.597s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/lib/python3.12/site-packages'
+[3.597s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/bin'
+[3.598s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.ps1'
+[3.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.dsv'
+[3.600s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.sh'
+[3.601s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.bash'
+[3.602s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/package.zsh'
+[3.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config/share/colcon-core/packages/moveit_resources_panda_moveit_config)
+[3.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/dual_arm_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/dual_arm_panda_moveit_config -- -j4 -l4
+[3.736s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_fanuc_moveit_config)
+[3.737s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config' for CMake module files
+[3.738s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config' for CMake config files
+[3.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/dual_arm_panda_moveit_config': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/dual_arm_panda_moveit_config
+[3.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources_fanuc_moveit_config
+[3.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_fanuc_moveit_config', 'cmake_prefix_path')
+[3.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.ps1'
+[3.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.dsv'
+[3.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.sh'
+[3.762s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/bin'
+[3.771s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/lib/pkgconfig/moveit_resources_fanuc_moveit_config.pc'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/lib/python3.12/site-packages'
+[3.775s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/bin'
+[3.777s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.ps1'
+[3.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.dsv'
+[3.791s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.sh'
+[3.800s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.bash'
+[3.801s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.zsh'
+[3.802s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/colcon-core/packages/moveit_resources_fanuc_moveit_config)
+[3.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources_fanuc_moveit_config)
+[3.811s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config' for CMake module files
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config' for CMake config files
+[3.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources_fanuc_moveit_config', 'cmake_prefix_path')
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.ps1'
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.dsv'
+[3.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/hook/cmake_prefix_path.sh'
+[3.839s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/bin'
+[3.839s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/lib/pkgconfig/moveit_resources_fanuc_moveit_config.pc'
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/lib/python3.12/site-packages'
+[3.866s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/bin'
+[3.868s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.ps1'
+[3.879s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.dsv'
+[3.881s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.sh'
+[3.888s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.bash'
+[3.891s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.zsh'
+[3.895s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config/share/colcon-core/packages/moveit_resources_fanuc_moveit_config)
+[3.898s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/manipulation_ws/src/moveit_resources/moveit_resources' with build type 'ament_cmake'
+[3.898s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/manipulation_ws/src/moveit_resources/moveit_resources'
+[3.898s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.898s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dual_arm_panda_moveit_config)
+[3.916s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config' for CMake module files
+[3.918s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config' for CMake config files
+[3.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/dual_arm_panda_moveit_config' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/dual_arm_panda_moveit_config
+[3.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('dual_arm_panda_moveit_config', 'cmake_prefix_path')
+[3.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.ps1'
+[3.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.dsv'
+[3.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.sh'
+[3.927s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/bin'
+[3.927s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/lib/pkgconfig/dual_arm_panda_moveit_config.pc'
+[3.928s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/lib/python3.12/site-packages'
+[3.929s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/bin'
+[3.933s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.ps1'
+[3.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.dsv'
+[3.940s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.sh'
+[3.946s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.bash'
+[3.948s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.zsh'
+[3.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/colcon-core/packages/dual_arm_panda_moveit_config)
+[3.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dual_arm_panda_moveit_config)
+[3.954s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config' for CMake module files
+[3.955s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config' for CMake config files
+[3.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('dual_arm_panda_moveit_config', 'cmake_prefix_path')
+[3.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.ps1'
+[3.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.dsv'
+[3.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/hook/cmake_prefix_path.sh'
+[3.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/bin'
+[3.964s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/lib/pkgconfig/dual_arm_panda_moveit_config.pc'
+[3.965s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/lib/python3.12/site-packages'
+[3.971s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/bin'
+[3.974s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.ps1'
+[3.980s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.dsv'
+[3.987s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.sh'
+[3.993s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.bash'
+[3.998s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/dual_arm_panda_moveit_config/package.zsh'
+[4.003s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/dual_arm_panda_moveit_config/share/colcon-core/packages/dual_arm_panda_moveit_config)
+[4.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources -- -j4 -l4
+[4.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/manipulation_ws/build/moveit_resources -- -j4 -l4
+[4.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/manipulation_ws/build/moveit_resources': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources
+[4.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources)
+[4.357s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources' for CMake module files
+[4.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/manipulation_ws/build/moveit_resources' returned '0': AMENT_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/manipulation_ws/install/moveit_resources_panda_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_fanuc_moveit_config:/workspaces/manipulation_ws/install/moveit_resources_pr2_description:/workspaces/manipulation_ws/install/moveit_resources_panda_description:/workspaces/manipulation_ws/install/moveit_resources_fanuc_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/manipulation_ws/build/moveit_resources
+[4.372s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources' for CMake config files
+[4.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources', 'cmake_prefix_path')
+[4.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.ps1'
+[4.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.dsv'
+[4.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.sh'
+[4.385s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/bin'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/lib/pkgconfig/moveit_resources.pc'
+[4.387s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/lib/python3.12/site-packages'
+[4.393s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/bin'
+[4.404s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.ps1'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.dsv'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.sh'
+[4.421s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.bash'
+[4.430s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.zsh'
+[4.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources/share/colcon-core/packages/moveit_resources)
+[4.447s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_resources)
+[4.451s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources' for CMake module files
+[4.458s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources' for CMake config files
+[4.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_resources', 'cmake_prefix_path')
+[4.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.ps1'
+[4.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.dsv'
+[4.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/hook/cmake_prefix_path.sh'
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/bin'
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/lib/pkgconfig/moveit_resources.pc'
+[4.490s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/lib/python3.12/site-packages'
+[4.490s] Level 1:colcon.colcon_core.environment:checking '/workspaces/manipulation_ws/install/moveit_resources/bin'
+[4.491s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.ps1'
+[4.492s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.dsv'
+[4.516s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.sh'
+[4.517s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.bash'
+[4.525s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/manipulation_ws/install/moveit_resources/share/moveit_resources/package.zsh'
+[4.529s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/manipulation_ws/install/moveit_resources/share/colcon-core/packages/moveit_resources)
+[4.534s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.535s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.536s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.538s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.619s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.619s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.620s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.620s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.637s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[4.638s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.639s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/manipulation_ws/install/local_setup.ps1'
+[4.646s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/manipulation_ws/install/_local_setup_util_ps1.py'
+[4.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/manipulation_ws/install/setup.ps1'
+[4.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/manipulation_ws/install/local_setup.sh'
+[4.674s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/manipulation_ws/install/_local_setup_util_sh.py'
+[4.680s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/manipulation_ws/install/setup.sh'
+[4.695s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/manipulation_ws/install/local_setup.bash'
+[4.706s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/manipulation_ws/install/setup.bash'
+[4.715s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/manipulation_ws/install/local_setup.zsh'
+[4.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/manipulation_ws/install/setup.zsh'
