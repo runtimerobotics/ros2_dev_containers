@@ -127,15 +127,17 @@ cd ros2_dev_containers/navigation/ros2_ws
 ## test the Sample Navigation Stack
    **A TurtleBot3 navigation launch file is included for quick testing**
 
-## Build the Workspace
+**Build the Workspace**
 ```bash
 cd ros2_dev_containers/navigation/ros2_ws
 colcon build
-source install/setup.bash```
+source install/setup.bash
+```
 
 ## Launch Navigation
 ```bash
-ros2 launch nav2_bringup tb3_simulation_launch.py```
+ros2 launch nav2_bringup tb3_simulation_launch.py
+```
 
 It will open Like :
 <img width="1341" height="621" alt="Screenshot 2025-06-28 163834" src="https://github.com/user-attachments/assets/164ac4c9-da5b-416c-8d74-9c5cf2b07c0a" />
@@ -149,11 +151,13 @@ cd ros2_dev_containers/navigation/ros2_ws/src
 ros2 pkg create --build-type ament_python my_nav_pkg
 cd ..
 colcon build
-source install/setup.bash```
+source install/setup.bash
+```
 
 **Then, test your nodes or launch files with:**
 ```bash
-ros2 launch my_nav_pkg my_nav_launch.py```
+ros2 launch my_nav_pkg my_nav_launch.py
+```
 
 
 ## Troubleshooting
@@ -162,7 +166,8 @@ Use **apt** inside the container to install them
 Then rebuild using:
 ```bash
 colcon build --symlink-install --event-handlers console_direct+
-source install/setup.bash```
+source install/setup.bash
+```
 
 
 
