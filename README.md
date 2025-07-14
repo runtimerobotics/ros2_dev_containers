@@ -43,8 +43,9 @@ To use these Devcontainers, you’ll need:
 2. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
       ```bash
-      Dev Containers: Reopen in Container
+      Dev Containers: Open Folder in Container 
       ```
+      then select ros_dev_tools folder
 3. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
@@ -135,8 +136,9 @@ cd ros2_dev_containers/simulation/ros2_ws
 2. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
       ```bash
-      Dev Containers: Reopen in Container
+      Dev Containers: Open Folder in Container
       ```
+      then select the simulation folder
 3. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
