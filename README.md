@@ -183,7 +183,11 @@ cd ros2_dev_containers/simulation/ros2_ws
    ```
 ## test the Sample Navigation Stack
    **A TurtleBot3 navigation launch file is included for quick testing**
-
+  To test it:
+  Clean up previous builds using
+   ```bash
+   rm -rf build/ install/ log/
+   ``` 
 **Build the Workspace**
 ```bash
 cd ros2_dev_containers/navigation/ros2_ws
@@ -195,6 +199,16 @@ source install/setup.bash
 ```bash
 ros2 launch nav2_bringup tb3_simulation_launch.py
 ```
+**Note for GUI Tools (rqt, rviz2, gz sim)**
+   If GUI tools are not displaying properly, allow local network connections for X11 with:
+   ```bash
+   xhost +local:
+   ```
+   ✅ Do this on your host machine terminal (not inside the container).
+   After you finish using the Devcontainer, disallow local connections for security:
+   ```bash
+   xhost -local:
+   ```
 
 It will open Like :
 <img width="1341" height="621" alt="Screenshot 2025-06-28 163834" src="https://github.com/user-attachments/assets/164ac4c9-da5b-416c-8d74-9c5cf2b07c0a" />
@@ -226,8 +240,6 @@ colcon build --symlink-install --event-handlers console_direct+
 source install/setup.bash
 ```
 
-
---------------------------------------------------------------------- MANIPULATION CONTAINER ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # 📘 Manipulation Dev Container – ROS 2 MoveIt 2 (Panda Robot)
@@ -319,6 +331,71 @@ LIBGL_ALWAYS_SOFTWARE=1 ros2 launch moveit_resources_panda_moveit_config demo.la
 | Missing 3D sensor plugin | Not required unless doing octomap-based collision |
 
 ---
+
+
+# Perception  Devcontainer
+
+
+
+## 🧠 ROS 2 Perception Setup (Dev Containers)
+This README provides instructions for setting up and working with the Perception Stack inside a ROS 2 Dev Container environment. It includes installation steps for OpenCV, PCL (Point Cloud Library), and relevant ROS bridges.
+
+
+## 📦 Installed Packages
+opencv2 (OpenCV for image processing)
+pcl (Point Cloud Library for 3D perception)
+pcl_ros (ROS interface for PCL)
+image_transport
+cv_bridge (OpenCV to ROS image conversion)
+pcl_conversions
+vision_opencv (Includes cv_bridge and image_geometry)
+
+
+
+## 🐳 Steps to Use in Dev Container
+1.**Clone and Open in Dev Container**
+```bash
+git clone https://github.com/runtimerobotics/ros2_dev_containers.git
+cd ros2_dev_containers/perception
+```
+# Use Dev Container: Reopen in Container
+2. **Open in Container**
+  Open the Command Palette (Ctrl+Shift+P) and run:
+      ```bash
+      Dev Containers: Open Folder in Container 
+      ```
+      then select perception folder
+3.**Build the Workspace**
+```bash
+   source /opt/ros/jazzy/setup.bash
+```
+
+## 🧪 Test Commands
+
+## ✅ Checking if PCL is installed
+1️⃣ Check the ROS PCL package
+
+To verify that the ROS PCL package is installed (for example, pcl_ros):
+ ```bash
+   ros2 pkg list | grep pcl
+   ```
+You should see output like:
+
+pcl_conversions
+pcl_msgs
+pcl_ros
+## 🧪 How to test OpenCV
+
+To verify OpenCV is installed and working, run a test script like:
+
+```bash
+# ✅ Check if OpenCV Python is installed
+python3 -c "import cv2; print(cv2.__version__)"
+# ✅ Check if OpenCV ROS bindings (cv_bridge) are installed
+ros2 pkg list | grep cv_bridge
+```
+
+
 
 
   
