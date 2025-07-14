@@ -160,20 +160,21 @@ cd ros2_dev_containers/simulation/ros2_ws
 ### Steps
 
 1. **Clone the Repository**
-git clone https://github.com/runtimerobotics/ros2_dev_containers.git
-cd ros2_dev_containers/navigation/ros2_ws
-
-2. **Reopen in Container**
+    ```bash
+      git clone https://github.com/runtimerobotics/ros2_dev_containers.git
+      cd ros2_dev_containers/navigation/ros2_ws
+      ```
+3. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
       ```bash
       Dev Containers: Reopen in Container
       ```
-3. **Stay in the Workspace**
+4. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
     cd ros2_dev_containers/navigation/ros2_ws
    ```
-4. **Source the ROS Environment**
+5. **Source the ROS Environment**
    Run
    ```bash
    source /opt/ros/jazzy/setup.bash
