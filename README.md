@@ -4,14 +4,18 @@
 
 ## Features
 
+- 🧰 ROS Dev Tools: Supports GUI tools like rqt, rviz2, gz sim, MoveIt, and other ROS developer tools.
 - 🛠 **Simulation:** Run and test simulation scenarios in an isolated environment.
 - 🗺️ **Navigation:** Develop and test navigation pipelines reproducibly.
 - 🤖 **Manipulation:** Build, test, and iterate on robotic manipulation modules.
 - 🖥️ Supports GUI tools: **rqt**, **rviz2**, **gz sim** , **moveit**
+- 👀 Perception: Integrate and test perception pipelines for sensors and vision systems.
 
 ## Project Structure
 ```bash
 ros2_dev_containers/
+├── ros_dev_tools/
+├── perception/
 ├── manipulation/
 ├── navigation/
 ├── simulation/
@@ -28,13 +32,13 @@ To use these Devcontainers, you’ll need:
 - ✅ **Dev Containers Extension:** Install the **Dev Containers** extension for VS Code.
   
 ---
-# Simulation Devcontainer
+# ros_dev_tools Devcontainer
 ### Steps
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/runtimerobotics/ros2_dev_containers.git
-   cd ros2_dev_containers/simulation/ros2_ws
+   cd ros2_dev_containers/ros_dev_tools/ros2_ws
    ```
 2. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
@@ -44,7 +48,7 @@ To use these Devcontainers, you’ll need:
 3. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
-    cd ros2_dev_containers/simulation/ros2_ws
+    cd ros2_dev_containers/ros_dev_tools/ros2_ws
    ```
 4. **Source the ROS Environment**
    Run
@@ -73,13 +77,13 @@ To use these Devcontainers, you’ll need:
 1. **A sample simulation package is already placed in the src folder.**
   To test it:
   Clean up previous builds using
-   
-
-   
+   ```bash
+   rm -rf build/ install/ log/
+   ``` 
 2. **Build and Run**
  Navigate to your workspace root:
    ```bash
-      cd ros2_dev_containers/simulation/ros2_ws
+      cd ros2_dev_containers/ros_dev_tools/ros2_ws
       colcon build
       source install/setup.bash
       ros2 launch andino_gz andino_gz.launch.py
@@ -91,15 +95,65 @@ If you get errors about missing or broken packages, install the required package
 
 You can create your own ROS 2 packages inside the src/ folder:
   ```bash
-      cd ros2_dev_containers/simulation/ros2_ws/src
+      cd ros2_dev_containers/ros_dev_tools/ros2_ws/src
       ros2 pkg create --build-type ament_python my_new_package
       cd ..
       colcon build
       source install/setup.bash
    ```
 Then test your simulation launch files or nodes as needed.
+## 🧪 How to test OpenCV
 
+To verify OpenCV is installed and working, run a test script like:
 
+```bash
+# ✅ Check if OpenCV Python is installed
+python3 -c "import cv2; print(cv2.__version__)"
+# ✅ Check if OpenCV ROS bindings (cv_bridge) are installed
+ros2 pkg list | grep cv_bridge
+```
+## ✅ Checking if PCL is installed
+1️⃣ Check the ROS PCL package
+
+To verify that the ROS PCL package is installed (for example, pcl_ros):
+ ```bash
+   ros2 pkg list | grep pcl
+   ```
+You should see output like:
+
+pcl_conversions
+pcl_msgs
+pcl_ros
+--------------------------------------------------------------------- SIMULATION ---------------------------------------------------------------------
+## Simulation DevContainer
+### Steps
+
+1. **Clone the Repository**
+git clone https://github.com/runtimerobotics/ros2_dev_containers.git
+cd ros2_dev_containers/simulation/ros2_ws
+
+2. **Reopen in Container**
+  Open the Command Palette (Ctrl+Shift+P) and run:
+      ```bash
+      Dev Containers: Reopen in Container
+      ```
+3. **Stay in the Workspace**
+   If not open your terminal inside the devconatiner and navigate to:
+   ```bash
+    cd ros2_dev_containers/simulation/ros2_ws
+   ```
+4. **Source the ROS Environment**
+   Run
+   ```bash
+   source /opt/ros/jazzy/setup.bash
+   ```
+  ## test the Sample Navigation Stack
+   ```bash
+   ros2
+   rqt
+   rviz2
+   gz sim
+   ```
 --------------------------------------------------------------------- NAVIGATION ---------------------------------------------------------------------
 
 ## Navigation DevContainer
