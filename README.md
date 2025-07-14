@@ -149,7 +149,7 @@ cd ros2_dev_containers/simulation/ros2_ws
    ```bash
    source /opt/ros/jazzy/setup.bash
    ```
-  ## test the Sample Navigation Stack
+  ## test the Sample Simulation tools
    ```bash
    ros2
    rqt
