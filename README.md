@@ -1,10 +1,10 @@
-# Devcontainers for Simulation, Navigation, Manipulation
+# Devcontainers for Simulation, Navigation, Manipulation,Perception
 
 **Devcontainers** are portable, reproducible development environments defined using configuration files. They allow developers to easily share and run consistent setups for tools, libraries, and dependencies inside isolated containers.
 
 ## Features
 
-- 🧰 ROS Dev Tools: Supports GUI tools like rqt, rviz2, gz sim, MoveIt, and other ROS developer tools.
+- 🧰 **ROS Dev Tools:** Supports GUI tools like rqt, rviz2, gz sim, MoveIt, and other ROS developer tools.
 - 🛠 **Simulation:** Run and test simulation scenarios in an isolated environment.
 - 🗺️ **Navigation:** Develop and test navigation pipelines reproducibly.
 - 🤖 **Manipulation:** Build, test, and iterate on robotic manipulation modules.
@@ -32,7 +32,7 @@ To use these Devcontainers, you’ll need:
 - ✅ **Dev Containers Extension:** Install the **Dev Containers** extension for VS Code.
   
 ---
-# ros_dev_tools Devcontainer
+# ros_dev_tools  Devcontainer
 ### Steps
 
 1. **Clone the Repository**
@@ -124,7 +124,7 @@ You should see output like:
 pcl_conversions
 pcl_msgs
 pcl_ros
---------------------------------------------------------------------- SIMULATION ---------------------------------------------------------------------
+
 ## Simulation DevContainer
 ### Steps
 
