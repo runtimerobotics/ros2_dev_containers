@@ -1,0 +1,37 @@
+
+{
+  "name": "ROS2 Jazzy Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python",
+    "ms-ros.vscode-ros"
+  ],
+  "postCreateCommand": "apt update && apt install -y ros-dev-tools",
+  "mounts": [
+    // X11 socket for GUI applications
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+    // Xauthority for authentication to the X server
+    "source=${env:HOME}/.Xauthority,target=/root/.Xauthority,type=bind",
+    // Crucial for direct rendering with integrated/non-NVIDIA GPUs
+    "source=/dev/dri,target=/dev/dri,type=bind"
+  ],
+  "runArgs": [
+    "--privileged", // Often needed for full GPU access and some simulation tools
+    "--net=host", // Use host network for easier discovery and less networking issues
+    "--env=DISPLAY=${env:DISPLAY}",
+    "--env=XAUTHORITY=/root/.Xauthority",
+    "--env=QT_XCB_GL_INTEGRATION=xcb_gl_egl", // Often helps with Qt-based apps (like RViz/Gazebo)
+    // "--env=LIBGL_ALWAYS_INDIRECT=1", // Keep this commented out first. Try direct rendering.
+    "--env=GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:/usr/share/gazebo/models",
+    "--env=GAZEBO_RESOURCE_PATH=/usr/share/gazebo-11:/usr/share/gazebo",
+    "--env=ROS_DOMAIN_ID=0" // Or any specific ID you use
+  ],
+  "remoteUser": "root"
+}
