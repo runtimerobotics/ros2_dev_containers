@@ -16,17 +16,6 @@ cd ros2_dev_containers/manipulation
 
 ---
 
-## ⚙️ Prerequisites
-
-Make sure the following tools are installed on your system:
-
-| Tool | Version | Link |
-|------|---------|------|
-| [Docker](https://www.docker.com/) | Latest | Docker Desktop or Docker Engine |
-| [Visual Studio Code](https://code.visualstudio.com/) | Latest | Code Editor |
-| [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) | Latest | VS Code Extension |
-
----
 
 ## 🚀 How to Run the Dev Container
 
