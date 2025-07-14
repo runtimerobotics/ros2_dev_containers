@@ -130,21 +130,23 @@ pcl_ros
 ### Steps
 
 1. **Clone the Repository**
-git clone https://github.com/runtimerobotics/ros2_dev_containers.git
-cd ros2_dev_containers/simulation/ros2_ws
+```bash
+      git clone https://github.com/runtimerobotics/ros2_dev_containers.git
+      cd ros2_dev_containers/simulation/ros2_ws
+```
 
-2. **Reopen in Container**
+3. **Reopen in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
       ```bash
       Dev Containers: Open Folder in Container
       ```
       then select the simulation folder
-3. **Stay in the Workspace**
+4. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
     cd ros2_dev_containers/simulation/ros2_ws
    ```
-4. **Source the ROS Environment**
+5. **Source the ROS Environment**
    Run
    ```bash
    source /opt/ros/jazzy/setup.bash
@@ -358,7 +360,7 @@ vision_opencv (Includes cv_bridge and image_geometry)
 git clone https://github.com/runtimerobotics/ros2_dev_containers.git
 cd ros2_dev_containers/perception
 ```
-# Use Dev Container: Reopen in Container
+## Use Dev Container: Reopen in Container
 2. **Open in Container**
   Open the Command Palette (Ctrl+Shift+P) and run:
       ```bash
