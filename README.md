@@ -30,6 +30,11 @@ To use these Devcontainers, you’ll need:
 - ✅ **Docker:** Install [Docker](https://www.docker.com/) to run containers on your system.
 - ✅ **Visual Studio Code (VS Code):** Install [VS Code](https://code.visualstudio.com/).
 - ✅ **Dev Containers Extension:** Install the **Dev Containers** extension for VS Code.
+- ✅ **Create .Xauthority File (If It Doesn't Exist)**
+  ```bash
+      touch ~/.Xauthority
+   ```
+  This creates an empty .Xauthority file in your home directory, preventing Docker from failing due to a missing file.
   
 ---
 # ros_dev_tools  Devcontainer
@@ -144,7 +149,7 @@ pcl_ros
 4. **Stay in the Workspace**
    If not open your terminal inside the devconatiner and navigate to:
    ```bash
-    cd ros2_dev_containers/simulation/ros2_ws
+    cd ros2_dev_containers/simulation
    ```
 5. **Source the ROS Environment**
    Run
