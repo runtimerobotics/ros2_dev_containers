@@ -1,33 +1,42 @@
-# File: .devcontainer/Dockerfile
+# Base Image
+FROM osrf/ros:jazzy-desktop-full
 
-FROM ros:jazzy-ros-base
-
-# Set noninteractive frontend
+# Always set noninteractive for safe installs
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install ROS 2 tools: RViz, MoveIt, GUI support, etc.
-RUN apt update && apt install -y \
-    ros-jazzy-desktop-full \
+# Update package lists and add ROS 2 sources to ensure all packages are found
+RUN apt update && apt install -y curl gnupg2 lsb-release && \
+    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - && \
+    echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list && \
+    apt update
+
+# Install common tools and manipulation-related ROS packages
+RUN apt install -y \
+    python3-pip \
+    mesa-utils \
+    libgl-dev \
+    libglu-dev \
+    xterm \
+    iputils-ping \
+    net-tools \
+    vim \
     ros-jazzy-moveit \
-    ros-jazzy-rviz2 \
-    ros-jazzy-joint-state-publisher-gui \
-    ros-jazzy-controller-manager \
-    ros-jazzy-ros2-control \
-    ros-jazzy-ros2-controllers \
-    x11-apps \
-    build-essential \
-    python3-colcon-common-extensions \
-    git \
-    curl \
-    wget \
-    nano \
-    && rm -rf /var/lib/apt/lists/*
+    ros-jazzy-moveit-plugins \
+    ros-jazzy-moveit-resources-panda-moveit-config \
+    ros-jazzy-ament-cmake-clang-format && \
+    # Try to install PCL ROS bindings; fallback to system libpcl if not found
+    (apt install -y ros-jazzy-pcl-ros || apt install -y libpcl-dev)
 
-# Set up entrypoint and environment
-SHELL ["/bin/bash", "-c"]
+# Set UTF-8 locale (assuming it’s already supported)
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_ALL=en_US.UTF-8
 
-# Source ROS automatically
-RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+# Explicit ROS env
+ENV ROS_DISTRO=jazzy
 
-# Set DISPLAY env variable for GUI support (X11)
-ENV DISPLAY=:0
+# Confirm Python version
+RUN python3 --version
+
+# Default shell
+CMD ["/bin/bash"]
