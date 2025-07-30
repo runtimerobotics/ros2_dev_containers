@@ -21,6 +21,16 @@ ros2_dev_containers/
 ├── simulation/
 └── README.md
 ```
+## Container Overview
+
+| Container        | Purpose                                     | Example Packages / Use Cases                       |
+|------------------|---------------------------------------------|----------------------------------------------------|
+| ros_dev_tools     | Core dev tools & CLI extensions            | colcon, ros2cli, lint tools                        |
+| perception        | Vision, camera, and sensor data processing | image_pipeline, RealSense, ZED, object detection   |
+| manipulation      | Robotic arm control & grasp planning       | MoveIt 2, ros2_control, Pick & Place with UR5      |
+| navigation        | Mapping, localization, and path planning   | nav2, AMCL, SLAM Toolbox, TurtleBot3 navigation    |
+| simulation        | Full robot and environment simulation      | Gazebo, Ignition, TurtleBot3, multi-robot scenarios|
+
 ## How to Use Devcontainers
 
 ### Prerequisites
